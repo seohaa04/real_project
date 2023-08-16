@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+<link rel="stylesheet" href="css/t_member22.css">
+<script type="text/javascript" src="js/jquery-3.7.0.js"></script>
+
+</head>
+<body>
+<div class="t_member_input" id="t_member_container">
+			<div class="t_member_input" id="t_member_header">
+				<div class="t_member_input" id="t_member_headerContent">
+					<div class="head" class="t_member_input" id="t_member_head1">
+						<h3 class="t_member_input" id="t_member_titleH3">
+							<a>
+								<img class="t_member_input" id="t_member_main_logo" src="img/메인로고회색.png" alt="멍냥존 로고">
+							</a>
+						</h3>
+					</div>
+				</div>
+			</div>				
+			
+		<img class="t_member_input" id="t_member_join_img" src="img/강아지3.jpg" alt="멍냥존">
+			
+			
+<div class="blind" id="t_member">
+	<img id="xbutton" src="img/x.png" onclick="logout()"/>
+	<img id="t_member_join_img" src="img/강아지3.jpg" alt="멍냥존">
+	<div id="t_member_main">
+		<div id="t_member_main_head" >
+			<h2 id="t_member_join" >Join Us</h2>
+				<h5>멍냥Zone에서 뛰어놀 준비가 되었어?<br> 
+				함께 어울리는 귀여운 멍냥친구들을 만나고 싶다면 지금 바로 회원가입 해보세요!</h5>
+		</div>		
+		<div id="t_member_jointable">		
+								<table>
+									<tr><td>아이디: </td><td colspan="3"><input class="t_member_input" id="t_member_myid" type="text" placeholder="아이디 입력(6~20자)" onchange="implement(myid,idexamine)"><label id="t_member_idError" class="error"></label></td></tr>
+									<tr><td>비밀번호: </td><td colspan="3"><input class="t_member_input" id="t_member_mypass" type="password" placeholder="비밀번호 (문자,숫자,특수문자 포함 8~20자)"><label id="t_member_pswError" class="error"></label></td></tr>
+									<tr><td>비밀번호 확인: </td><td colspan="3"><input class="t_member_input" id="t_member_mypasschk" type="password" placeholder="비밀번호 확인"><label class="t_member_input" id="t_member_pswchkError" class="error"></label></td></tr>
+									<tr><td colspan="3"><font class="t_member_input" id="t_member_chkNotice" size="2"></font></td></tr>
+									<tr><td>이름: </td><td colspan="3"><input class="t_member_input" id="t_member_myname" type="text" placeholder="이름을 입력해주세요."><label id="t_member_nameError" class="error"></label></td></tr>
+									<tr><td>닉네임: </td><td colspan="3"><input class="t_member_input" id="t_member_nickname" type="text" placeholder="닉네임을 입력해주세요." ><label id="t_member_nickError" class="error"></label></td></tr>
+									<tr><td>지역: </td><td colspan="3"><select name="sido1" class="t_member_input" id="t_member_sido1"></select><select name="gugun1" id="t_member_gugun1"></select></tr>
+									<tr><td>생년월일: </td><td><select id="t_member_birth_year"><option value="" disabled selected>년도</option></select></td><td>	<select id="t_member_birth_month" ><option value="" disabled selected>월</option></select></td><td><select class="t_member_input" id="t_member_birth_day"><option value="" disabled selected>일</option></select></td></tr>
+									<tr><td>이메일: </td><td colspan="3"><input type="text" class="t_member_input" id="t_member_myemail" placeholder="이메일 주소"><label id="t_member_emailError" class="error"></label></td></tr>
+									<tr><td>휴대폰: </td><td colspan="3"><input type="text" class="t_member_input" id="t_member_myph" placeholder="휴대폰 번호 ('-'제외 )"></td></tr>
+									<tr><td colspan="4"><input class="t_member_submit" type="submit" value="멍냥 친구 되기" onclick="signin(); return false;"></td></tr>
+								</table>		
+							</div>		
+						</div>		
+					</div>
+				</div>
+<script type="text/javascript" src="js/t_member22.js"></script>
+</body>
+</html>
